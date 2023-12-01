@@ -1,11 +1,75 @@
-/* general tags */
+/* General properties */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    border: 1px solid lime;
 }
 
 html {
     font-family: 'PT Sans', sans-serif;
 }
 
+a {
+    text-decoration: none;
+}
+
+.space {
+    margin: 0 auto;
+    width: 80%;
+}
+
+/* Properties about the header */
+
+header {
+    background-color: rgba(0, 132, 253, 1);
+    height: 7vh;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+nav figure a img {
+    height: 70%;
+    padding-top: 15px;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+
+.list-item {
+    list-style-type: none;
+}
+
+header nav ul li a {
+    color: white;
+    text-transform: capitalize;
+}
+
+#start:hover {
+    color: black;
+    background-color: white;
+    border-radius: 30px;
+    padding: 5px 10px;
+}
+
+/* Properties about the first section */
+
+
+
+
+/* Media query respnsive */
+
+@media screen and (min-width: 425px) {
+    .container {
+        width: 100%;
+    }
+}
