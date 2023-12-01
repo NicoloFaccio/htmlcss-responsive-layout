@@ -134,16 +134,55 @@ div.boxes p {
     padding-block: 1em;
 }
 
+/* Properties about the second section */
+
+main section:nth-child(2) {
+    background-color: rgba(151, 146, 228, 1);
+}
+
+.space-2 {
+    margin: 0 auto;
+    width: 70%;
+}
 
 
 
 /* Media query respnsive */
 
-@media screen and (max-width: 425px) {
-    header {
-        width: 100%;
+@media screen and (max-width: 768px) {
+    .space {
+        margin: 0 auto;
+        width: 90%;
     }
 
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;    
+    }
+
+    .boxes {
+        flex-basis: calc( (100% / 3) - (20px / 3) );
+        padding-inline: 30px; 
+    }
+
+    .boxes:first-child {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .box-2 {
+        display: flex;
+        justify-content: left;
+        align-items: flex-end;
+    }
+
+    .box-2 img {
+        padding-top: 30px; 
+    }
+}
+
+@media screen and (max-width: 425px) {
     header nav ul  {
         display: none;
     }
