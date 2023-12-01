@@ -1,9 +1,9 @@
-/* Common properties */
+/* COMMON PROPERTIES */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* border: 1px solid lime; */
+    border: 1px solid lime;
 }
 
 html {
@@ -19,7 +19,7 @@ a {
     width: 80%;
 }
 
-/* Properties about the header */
+/* PROPERTIES ABOUT THE HEADER */
 
 header {
     background-color: rgba(0, 132, 253, 1);
@@ -61,7 +61,7 @@ header nav ul li a {
     padding: 5px 10px;
 }
 
-/* Properties about the first section */
+/* PROPERTIES ABOUT THE FIRST SECTION */
 
 .margin {
     margin-block: 40px;
@@ -134,20 +134,21 @@ div.boxes p {
     padding-block: 1em;
 }
 
-/* Properties about the second section */
+/* PROPERTIES ABOUT THE SECOND SECTION */
 
 main section:nth-child(2) {
     background-color: rgba(151, 146, 228, 1);
 }
 
-.space-2 {
-    margin: 0 auto;
-    width: 70%;
+#planning {
+    display: flex;
+    justify-content: center;
+    column-gap: 30px;
 }
 
 
 
-/* Media query respnsive */
+/* MEDIA QUERY RESPONSIVE */
 
 @media screen and (max-width: 768px) {
     .space {
@@ -190,6 +191,10 @@ main section:nth-child(2) {
     .space {
         margin: 0 auto;
         width: 90%;
+    }
+
+    .container {
+        gap: 30px;    
     }
 
     .margin {
