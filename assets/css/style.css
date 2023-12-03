@@ -3,7 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* border: 1px solid lime; */
+    border: 1px solid lime;
 }
 
 html {
@@ -30,6 +30,11 @@ a {
 .text {
     line-height: 180%;
     padding-block: 1em;
+}
+
+
+.background {
+    background-color: rgba(151, 146, 228, 1);
 }
 
 /* PROPERTIES ABOUT THE HEADER */
@@ -141,10 +146,6 @@ div.boxes p {
 
 /* PROPERTIES ABOUT THE SECOND SECTION */
 
-main section:nth-child(2) {
-    background-color: rgba(151, 146, 228, 1);
-}
-
 #planning {
     display: flex;
     justify-content: center;
@@ -253,6 +254,24 @@ div.people > div:last-child > blockquote {
 /* .quotes {
     font-size: 50px;
 } */
+
+/* PROPERTIES ABOUT THE FOURTH SECTION */
+
+.why {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+#features {
+    color: white;
+    text-align: center;
+    font-size: 40px;
+}
+
+.when {
+    flex-basis: calc( (100% / 3 ) - (60px / 3));
+}
 
 .name {
     text-transform: uppercase;
