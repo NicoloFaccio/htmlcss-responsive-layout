@@ -194,7 +194,6 @@ div#planning > div:nth-child(2) > h2 {
     padding-top: 1em;
 }
 
-
 div#planning > div:nth-child(2) > p{
     font-style: italic;
 }
@@ -211,6 +210,10 @@ div#planning > div:nth-child(2) > a{
     justify-content: center;
     align-items: center;
 }
+
+/* PROPERTIES ABOUT THE SECOND SECTION */
+
+
 
 /* MEDIA QUERY RESPONSIVE */
 
@@ -264,6 +267,8 @@ div#planning > div:nth-child(2) > a{
     div#planning > div:nth-child(2) {
         margin-block: 1em;
     }
+
+    /* THIRD SECTION */
 }
 
 @media screen and (max-width: 425px) {
@@ -316,4 +321,7 @@ div#planning > div:nth-child(2) > a{
     div#planning > div:nth-child(2) {
         margin-block: 1em;
     }
+
+    /* THIRD SECTION */
+
 }
