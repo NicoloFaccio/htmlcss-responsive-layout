@@ -19,6 +19,10 @@ a {
     width: 80%;
 }
 
+.margin {
+    margin-block: 40px;
+}
+
 .transform {
     text-transform: capitalize;
 }
@@ -71,9 +75,6 @@ header nav ul li a {
 
 /* PROPERTIES ABOUT THE FIRST SECTION */
 
-.margin {
-    margin-block: 40px;
-}
 
 .container {
     display: flex;
@@ -211,9 +212,51 @@ div#planning > div:nth-child(2) > a{
     align-items: center;
 }
 
-/* PROPERTIES ABOUT THE SECOND SECTION */
+/* PROPERTIES ABOUT THE THIRD SECTION */
 
+.testimonial {
+    text-align: center;
+}
 
+div.testimonial > h2 {
+    color: rgba(148, 143, 227, 1);
+    font-size: 2.2rem;
+    padding-block: 30px;
+}
+
+.why {
+    display: flex;
+    align-items: center;
+
+    margin-block: 30px;
+    color: white;
+    background-color: rgba(151, 146, 228, 1);
+    border-radius: 30px;
+}
+
+.people {
+    margin: 20px 30px;
+    width: 12%;
+}
+
+div.why > div.people figure img {
+    width: 100%;
+    aspect-ratio: 1;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+div.why > div:last-child > blockquote {
+    margin: 0px 30px 30px 0px;
+}
+
+.quotes {
+
+}
+
+.name {
+    text-transform: uppercase;
+}
 
 /* MEDIA QUERY RESPONSIVE */
 
