@@ -312,6 +312,11 @@ div.people > div:last-child > blockquote {
     }
 
     /* THIRD SECTION */
+    div.testimonial > span {
+        display: block;
+        padding-top: 30px;
+    }
+
     .person {
         width: 70%;
     }
@@ -373,5 +378,33 @@ div.people > div:last-child > blockquote {
     }
 
     /* THIRD SECTION */
-    
+    .cards {
+        margin: 0 auto;
+        width: 80%;
+        text-align: center;
+    }
+
+    div.testimonial > span {
+        display: block;
+        padding-top: 30px;
+    }
+
+    .people {
+        display: flex;
+        flex-direction: column;
+        /* text-align: center; */
+    }
+
+    div.people > div:last-child > blockquote {
+        margin: 0px 30px 30px 30px;
+    }
+
+    .name {
+        display: block;
+        margin-bottom: 40px;
+    }
+
+    div.people:last-child > .person {
+        width: 70%;
+    }
 }
