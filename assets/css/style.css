@@ -3,7 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    border: 1px solid lime;
+    /* border: 1px solid lime; */
 }
 
 html {
@@ -16,7 +16,17 @@ a {
 
 .space {
     margin: 0 auto;
-    width: 80%;
+    width: 80%; 
+}
+
+.space-2 {
+    margin: 0 auto;
+    width: 50%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
 }
 
 .margin {
@@ -47,6 +57,12 @@ section.background:nth-child(even) {
     color: rgba(148, 143, 227, 1);
     font-size: 2.2rem;
     padding-block: 30px;
+}
+
+.words {
+    display: block;
+    text-transform: uppercase;
+    margin-top: 40px;
 }
 
 /* PROPERTIES ABOUT THE HEADER */
@@ -344,7 +360,58 @@ div.people > div:last-child > blockquote {
     font-size: 1.6rem;
 }
 
+/* PROPERTIES ABOUT THE SIXTH SECTION */
+.login > span {
+    color: rgba(207, 206, 242, 1);
+}
+
+.title-1 {
+    text-transform: capitalize;
+    padding-block: 0.5em;
+    font-size: 2.2rem;
+}
+
+.title-2 {
+    text-transform: capitalize;
+    font-size: 4.2rem;
+    padding-bottom: 0.5em;
+    color: rgba(253, 193, 95, 1);
+}
+
+.login > p {
+    text-align: center;
+}
+
+.btn-white {
+    background-color: white;
+    color: rgba(151, 146, 228, 1);
+    text-transform: capitalize;
+    padding: 15px 55px;
+    margin-block: 20px;
+}
+
+.login > ul {
+    display: flex;
+    gap: 30px; 
+    margin-bottom: 40px;
+}
+
+.login > ul li a {
+    color: white;
+}
+
+.login > ul li:first-child {
+    list-style-type: none;
+}
+
+.login > ul li:last-child {
+    text-decoration: underline;
+}
+
+/* ---------------------------------------------------------- */
 /* --------------MEDIA QUERY RESPONSIVE--------------------- */
+/* ---------------------------------------------------------- */
+
 
 @media screen and (max-width: 768px) {
     /* GENERAL MEDIA QUERY'S PROPERTIES */
@@ -411,11 +478,6 @@ div.people > div:last-child > blockquote {
     }
 
     /* THIRD SECTION */
-    div.testimonial > span {
-        display: block;
-        padding-top: 30px;
-    }
-
     .person {
         width: 70%;
     }
@@ -436,6 +498,12 @@ div.people > div:last-child > blockquote {
 
     .linkedin {
         padding-inline: 10px;
+    }
+
+    /* SIXTH SECTION */
+    .space-2 {
+        margin: 0 auto;
+        width: 60%;
     }
 }
 
@@ -536,5 +604,20 @@ div.people > div:last-child > blockquote {
 
     .about-us > div:last-child > figure span {
         left: 120px;
+    }
+
+    .linkedin {
+        display: inline-block;
+        margin-bottom: 30px;
+    }
+
+    /* SIXTH SECTION */
+    .space-2 {
+        margin: 0 auto;
+        width: 95%;
+    }
+
+    .title-1 {
+        font-size: 2.0rem;
     }
 }
