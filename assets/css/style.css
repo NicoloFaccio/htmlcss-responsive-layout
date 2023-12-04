@@ -523,4 +523,18 @@ div.people > div:last-child > blockquote {
     .offers {
         flex-basis: calc( (100% / 1 ) - (80px / 1));
     }
+
+    /* FITH SECTION */
+    .about-us {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .about-us > div:last-child > figure img {
+        width: 45%;
+    }
+
+    .about-us > div:last-child > figure span {
+        left: 120px;
+    }
 }
