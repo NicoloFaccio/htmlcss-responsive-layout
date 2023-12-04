@@ -42,6 +42,13 @@ section.background:nth-child(even) {
     background-color: rgba(151, 146, 228, 1); 
 }
 
+
+.sub-title {
+    color: rgba(148, 143, 227, 1);
+    font-size: 2.2rem;
+    padding-block: 30px;
+}
+
 /* PROPERTIES ABOUT THE HEADER */
 
 header {
@@ -221,12 +228,6 @@ div#planning > div:nth-child(2) > a{
     text-align: center;
 }
 
-div.testimonial > h2 {
-    color: rgba(148, 143, 227, 1);
-    font-size: 2.2rem;
-    padding-block: 30px;
-}
-
 .people {
     display: flex;
     align-items: center;
@@ -274,7 +275,7 @@ div.people > div:last-child > blockquote {
 #features {
     color: white;
     text-align: center;
-    font-size: 40px;
+    font-size: 3.0rem;
     padding-block: 1em;
 }
 
@@ -300,9 +301,47 @@ div.people > div:last-child > blockquote {
     color: rgba(118, 118, 118, 1);
 }
 
-.offers > a {
+.btn-purple {
     background-color: rgba(151, 146, 228, 1); 
-    padding-inline: 40px;
+    padding-inline: 20px;
+}
+
+/* PROPERTIES ABOUT THE FITH SECTION */
+.about-us {
+    display: flex;
+    gap: 50px;
+}
+
+.column-right {
+    flex-basis: 70%;
+}
+
+.about-us > div:last-child {
+    flex-basis: 30%;
+}
+
+.about-us > div:last-child > figure {
+   position: relative;
+}
+
+.about-us > div:last-child > figure img {
+    width: 40%;
+    aspect-ratio: 1;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.about-us > div:last-child > figure span {
+    color: rgba(151, 146, 228, 1);
+    font-size: 10.2rem;
+    position: absolute;
+    left: 95px;
+    top: -30px;
+}
+
+.about-us > div:last-child p {
+    color: rgba(151, 146, 228, 1);
+    font-size: 1.6rem;
 }
 
 /* --------------MEDIA QUERY RESPONSIVE--------------------- */
@@ -386,18 +425,22 @@ div.people > div:last-child > blockquote {
     }
 
     /* FOURTH SECTION */
-     .offers {
+    .offers {
         flex-basis: calc( (100% / 2 ) - (80px / 2));
+    }
+
+    /* FITH SECTION */
+    .about-us > div:last-child > figure img {
+        width: 70%;
+    }
+
+    .linkedin {
+        padding-inline: 10px;
     }
 }
 
 @media screen and (max-width: 425px) {
     /* GENERAL MEDIA QUERY'S PROPERTIES */
-    .space {
-        margin: 0 auto;
-        width: 90%;
-    }
-
     .container {
         gap: 30px;
     }
